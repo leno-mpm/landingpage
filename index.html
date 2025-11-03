@@ -10,6 +10,7 @@
     <link href="css/swiper.css" rel="stylesheet"/>
     <link href="css/magnific-popup.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet"/>
+    
     <title>Al Día - Gestiona tus suscripciones</title>
   </head>
   
@@ -19,7 +20,7 @@
     <nav class="navbar fixed-top">
       <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap">
         <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="index.html">
-            <img src="images/logo.svg" alt="Al Día" class="h-8" />
+            <img src="images/logo.png" alt="Al Día" class="h-16" />
         </a>
         <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
           <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
@@ -32,14 +33,7 @@
             <li><a class="nav-link page-scroll" href="#pricing">Planes</a></li>
             <li><a class="nav-link page-scroll" href="#download">Descargar</a></li>
           </ul>
-          <span class="block lg:ml-3.5">
-            <a class="no-underline" href="#your-link">
-              <i class="fab fa-apple text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200 mr-1.5"></i>
-            </a>
-            <a class="no-underline" href="#your-link">
-              <i class="fab fa-android text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200"></i>
-            </a>
-          </span>
+          
         </div>
       </div>
     </nav>
@@ -83,7 +77,7 @@
 
         <div class="card">
           <div class="card-image">
-            <img src="images/features-icon-1.svg" alt="Integración de plataformas" />
+            <img src="images/features-icon-1.png" alt="Integración de plataformas" />
           </div>
           <div class="card-body">
             <h5 class="card-title">Integración multiplataforma</h5>
@@ -93,7 +87,7 @@
 
         <div class="card">
           <div class="card-image">
-            <img src="images/features-icon-2.svg" alt="Alertas" />
+            <img src="images/features-icon-2.png" alt="Alertas" />
           </div>
           <div class="card-body">
             <h5 class="card-title">Alertas oportunas</h5>
@@ -103,7 +97,7 @@
 
         <div class="card">
           <div class="card-image">
-            <img src="images/features-icon-3.svg" alt="Análisis" />
+            <img src="images/features-icon-3.png" alt="Análisis" />
           </div>
           <div class="card-body">
             <h5 class="card-title">Análisis de gastos</h5>
@@ -113,7 +107,7 @@
 
         <div class="card">
           <div class="card-image">
-            <img src="images/features-icon-4.svg" alt="Multilenguaje" />
+            <img src="images/features-icon-4.png" alt="Multilenguaje" />
           </div>
           <div class="card-body">
             <h5 class="card-title">Multilenguaje</h5>
@@ -123,7 +117,7 @@
 
         <div class="card">
           <div class="card-image">
-            <img src="images/features-icon-5.svg" alt="Actualizaciones" />
+            <img src="images/features-icon-5.png" alt="Actualizaciones" />
           </div>
           <div class="card-body">
             <h5 class="card-title">Actualizaciones gratuitas</h5>
@@ -133,7 +127,7 @@
 
         <div class="card">
           <div class="card-image">
-            <img src="images/features-icon-6.svg" alt="Soporte" />
+            <img src="images/features-icon-6.png" alt="Soporte" />
           </div>
           <div class="card-body">
             <h5 class="card-title">Soporte comunitario</h5>
@@ -163,154 +157,158 @@
       </div>
     </div>
     <!-- end of details -->
-
     <!-- Pricing -->
-    <div id="pricing" class="cards-2">
+    <div id="pricing" class="cards-2 relative py-16">
       <div class="absolute bottom-0 h-40 w-full bg-white"></div>
-      <div class="container px-4 pb-px sm:px-8">
-        <h2 class="mb-2.5 text-white lg:max-w-xl lg:mx-auto">Planes adaptados a tus necesidades</h2>
-        <p class="mb-16 text-white lg:max-w-3xl lg:mx-auto">Elige el plan que mejor se adapte a tu consumo y disfruta de Al Día sin complicaciones.</p>
+      <div class="container px-4 sm:px-8 max-w-7xl mx-auto text-gray-900">
+        <h2 class="mb-2.5 text-3xl font-bold lg:max-w-xl lg:mx-auto text-center text-white">Planes adaptados a tus necesidades</h2>
+        <p class="mb-16 text-center lg:max-w-3xl lg:mx-auto text-white/90">Elige el plan que mejor se adapte a tu consumo y disfruta de Al Día sin complicaciones.</p>
 
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">BÁSICO</div>
-            <div class="price"><span class="currency">$</span><span class="value">0</span></div>
-            <div class="frequency">mensual</div>
-            <p>Gestiona hasta 3 suscripciones con alertas básicas.</p>
-            <div class="button-wrapper">
-              <a class="btn-solid-reg page-scroll" href="#download">Probar gratis</a>
+        <div class="grid gap-8 md:grid-cols-3">
+
+          <!-- BÁSICO -->
+          <div class="w-full p-6 bg-white rounded-lg shadow text-gray-900">
+            <h5 class="mb-4 text-xl font-medium">BÁSICO</h5>
+            <div class="flex items-baseline mb-6">
+              <span class="text-3xl font-semibold">$</span>
+              <span class="text-5xl font-extrabold tracking-tight">0</span>
+              <span class="ms-1 text-xl font-normal text-gray-500">/mes</span>
             </div>
+            <ul role="list" class="space-y-4 mb-6">
+              <li class="flex items-center">
+                <svg class="shrink-0 w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z"/>
+                </svg>
+                <span class="ms-3 text-base">Gestiona hasta 3 suscripciones</span>
+              </li>
+              <li class="flex items-center line-through decoration-gray-400">
+                <svg class="shrink-0 w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M16.707 5.293-4 4a1 1 0 0 1-1.414 0l-2-2"/>
+                </svg>
+                <span class="ms-3 text-base">Alertas avanzadas</span>
+              </li>
+            </ul>
+            <a class="btn-solid-reg w-full text-center" href="#download">Probar gratis</a>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">PREMIUM</div>
-            <div class="price"><span class="currency">$</span><span class="value">2.99</span></div>
-            <div class="frequency">mensual</div>
-            <p>Gestiona suscripciones ilimitadas con reportes y notificaciones avanzadas.</p>
-            <div class="button-wrapper">
-              <a class="btn-solid-reg page-scroll" href="#download">Suscribirse</a>
+          <!-- PREMIUM -->
+          <div class="w-full p-6 bg-white rounded-lg shadow-lg border-2 border-indigo-600 text-gray-900">
+            <h5 class="mb-4 text-xl font-medium">PREMIUM</h5>
+            <div class="flex items-baseline mb-6">
+              <span class="text-3xl font-semibold">$</span>
+              <span class="text-5xl font-extrabold tracking-tight">2.99</span>
+              <span class="ms-1 text-xl font-normal text-gray-500">/mes</span>
             </div>
+            <ul role="list" class="space-y-4 mb-6">
+              <li class="flex items-center">
+                <svg class="shrink-0 w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z"/>
+                </svg>
+                <span class="ms-3 text-base">Suscripciones ilimitadas</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="shrink-0 w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z"/>
+                </svg>
+                <span class="ms-3 text-base">Reportes y alertas avanzadas</span>
+              </li>
+            </ul>
+            <a class="btn-solid-reg w-full text-center" href="#download">Suscribirse</a>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">FAMILIAR</div>
-            <div class="price"><span class="currency">$</span><span class="value">4.99</span></div>
-            <div class="frequency">mensual</div>
-            <p>Suscripciones ilimitadas para la familia, con gestión compartida y reportes individuales.</p>
-            <div class="button-wrapper">
-              <a class="btn-solid-reg page-scroll" href="#subscription-form">Suscribirse</a>
+          <!-- FAMILIAR -->
+          <div class="w-full p-6 bg-white rounded-lg shadow text-gray-900">
+            <h5 class="mb-4 text-xl font-medium">FAMILIAR</h5>
+            <div class="flex items-baseline mb-6">
+              <span class="text-3xl font-semibold">$</span>
+              <span class="text-5xl font-extrabold tracking-tight">4.99</span>
+              <span class="ms-1 text-xl font-normal text-gray-500">/mes</span>
             </div>
-
+            <ul role="list" class="space-y-4 mb-6">
+              <li class="flex items-center">
+                <svg class="shrink-0 w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z"/>
+                </svg>
+                <span class="ms-3 text-base">Suscripciones ilimitadas para la familia</span>
+              </li>
+              
+              <li class="flex items-center">
+                <svg class="shrink-0 w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z"/>
+                </svg>
+                <span class="ms-3 text-base">Reportes individuales</span>
+              </li>
+               <li class="flex items-center">
+                <svg class="shrink-0 w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M16.707 5.293a1 1 0 0 0-1.414 0L9 11.586 6.707 9.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7a1 1 0 0 0 0-1.414z"/>
+                </svg>
+                <span class="ms-3 text-base">Gestión compartida</span>
+              </li>
+              
+            </ul>
+            <a class="btn-solid-reg w-full text-center" href="#download">Suscribirse</a>
+            <br><br><br><br><br>
           </div>
+
         </div>
-
-
       </div>
     </div>
     <!-- end of pricing -->
 
-  
-
-
-    <!-- Subscription Form -->
-    <div id="subscription-form" class="py-16 bg-gray-50">
+    <!-- Review Form -->
+    <div id="review-form" class="py-16 bg-gray-50">
       <div class="container px-4 sm:px-8 max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Formulario de Suscripción</h2>
-        <form class="max-w-md mx-auto" method="POST" action="/suscribirse">
+        <h2 class="text-3xl font-bold mb-8 text-center">Escribe tu reseña</h2>
+        <form class="max-w-md mx-auto" id="submitReviewForm" method="POST" action="/submit-review">
           <div class="relative z-0 w-full mb-5 group">
-              <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-              <label for="email" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
-          </div>
-          <div class="relative z-0 w-full mb-5 group">
-              <input type="password" name="password" id="password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-              <label for="password" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+              <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+              <label for="name" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre</label>
           </div>
           <div class="relative z-0 w-full mb-5 group">
-              <input type="password" name="confirm_password" id="confirm_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-              <label for="confirm_password" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+              <input type="text" name="role" id="role" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+              <label for="role" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Rol (Ej. Estudiante, Padre, Profesional)</label>
           </div>
-          <div class="grid md:grid-cols-2 md:gap-6">
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="first_name" id="first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="first_name" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
-            </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="last_name" id="last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="last_name" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
-            </div>
+          <div class="relative z-0 w-full mb-5 group">
+              <textarea name="comment" id="comment" rows="4" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required></textarea>
+              <label for="comment" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Comentario</label>
           </div>
-          <div class="grid md:grid-cols-2 md:gap-6">
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="phone" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
-            </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="company" id="company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="company" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
-            </div>
-          </div>
-          <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Suscribirse</button>
+          <button type="submit" class="text-white btn-solid-reg w-full focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Enviar reseña</button>
         </form>
-    </div>
-    <br><br>
-    <!-- Testimonials -->
-    <div id="testimonials" class="py-16 bg-gray-100">
-      <div class="container px-4 sm:px-8 max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center">Lo que dicen nuestros usuarios</h2>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="testimonials-container">
-          
-          <!-- Testimonio de ejemplo (puedes eliminarlo cuando conectes la DB) -->
-          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-            <p class="mb-4 text-gray-700">
-              "Al Día me ha ayudado a organizar todas mis suscripciones y ya no me preocupo por cobros inesperados. ¡Totalmente recomendable!"
-            </p>
-            <div class="flex items-center">
-              <img src="images/user1.jpg" alt="Usuario 1" class="w-12 h-12 rounded-full mr-4">
-              <div>
-                <p class="font-semibold">María López</p>
-                <p class="text-gray-500 text-sm">Estudiante de Ingeniería</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-            <p class="mb-4 text-gray-700">
-              "Excelente app para llevar el control de mis suscripciones familiares. Muy intuitiva y confiable."
-            </p>
-            <div class="flex items-center">
-              <img src="images/user2.jpg" alt="Usuario 2" class="w-12 h-12 rounded-full mr-4">
-              <div>
-                <p class="font-semibold">Carlos Méndez</p>
-                <p class="text-gray-500 text-sm">Padre de familia</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-            <p class="mb-4 text-gray-700">
-              "Excelente app para llevar el control de mis suscripciones familiares. Muy intuitiva y confiable."
-            </p>
-            <div class="flex items-center">
-              <img src="images/user2.jpg" alt="Usuario 2" class="w-12 h-12 rounded-full mr-4">
-              <div>
-                <p class="font-semibold">Carlos Méndez</p>
-                <p class="text-gray-500 text-sm">Padre de familia</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Más testimonios se pueden agregar dinámicamente aquí -->
-        </div>
       </div>
     </div>
-    <!-- end of testimonials -->
 
 
+
+
+<!-- Testimonials Carousel -->
+<div id="testimonials" class="py-16 bg-gray-100">
+  <div class="container px-4 sm:px-8 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-12 text-center">Lo que dicen nuestros usuarios</h2>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slides aquí -->
+        <div class="swiper-slide max-w-xs bg-white p-6 rounded-lg shadow">
+          <p>"Excelente app para organizar mis suscripciones."</p>
+          <p class="font-semibold mt-4">María López</p>
+          <p class="text-gray-500 text-sm">Estudiante</p>
+        </div>
+        <div class="swiper-slide max-w-xs bg-white p-6 rounded-lg shadow">
+          <p>"Muy útil y confiable, ideal para la familia."</p>
+          <p class="font-semibold mt-4">Carlos Méndez</p>
+          <p class="text-gray-500 text-sm">Padre</p>
+        </div>
+
+      </div>
+
+      <!-- Navegación -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
 
 
   
@@ -339,5 +337,6 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/scripts.js"></script>
+     <script src="src/reviews.js"></script>
   </body>
 </html>

@@ -94,3 +94,65 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+/* Contenedor del swiper */
+.swiper {
+  width: 100%;
+  padding-bottom: 40px; /* espacio para la paginación */
+}
+
+/* Cada slide */
+.swiper-slide {
+  width: auto; /* Swiper controla el ancho */
+  max-width: 300px; /* límite máximo de ancho */
+  box-sizing: border-box;
+  flex-shrink: 0;
+  background: #fff; /* color de fondo */
+  border-radius: 12px; /* bordes redondeados */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08); /* sombra sutil */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.swiper-slide:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Texto dentro de cada slide */
+.swiper-slide p {
+  margin: 0 0 8px 0;
+}
+
+.swiper-slide .font-semibold {
+  margin-top: 8px;
+  color: #111827; /* color un poco más oscuro para el nombre */
+}
+
+.swiper-slide .text-gray-500 {
+  font-size: 0.875rem; /* más pequeño */
+}
+
+/* Flechas más visibles */
+.swiper-button-next, .swiper-button-prev {
+  color: #1d4ed8; /* azul */
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Paginación */
+.swiper-pagination-bullet {
+  background: #1d4ed8;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}

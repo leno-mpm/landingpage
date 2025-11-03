@@ -29,7 +29,19 @@ Colors:
 /**************************/
 /*     General Styles     */
 /**************************/
+.swiper {
+  width: 100%;
+}
 
+body, html {
+  overflow-x: hidden;
+}
+
+.swiper-slide {
+  width: auto; /* que Swiper lo controle */
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
 body,
 p {
     color: #6b747b;
