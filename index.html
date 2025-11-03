@@ -10,6 +10,9 @@
     <link href="css/swiper.css" rel="stylesheet"/>
     <link href="css/magnific-popup.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+
     <title>Al Día - Gestiona tus suscripciones</title>
   </head>
   
@@ -273,78 +276,106 @@
     </div>
     <!-- end of pricing -->
 
-    <!-- Review Form -->
-    <div id="review-form" class="py-16 bg-gray-50">
-      <div class="container px-4 sm:px-8 max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Escribe tu reseña</h2>
-        <form class="max-w-md mx-auto" id="submitReviewForm" method="POST" action="/submit-review">
-          <div class="relative z-0 w-full mb-5 group">
-              <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-              <label for="name" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre</label>
-          </div>
-          <div class="relative z-0 w-full mb-5 group">
-              <input type="text" name="role" id="role" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-              <label for="role" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Rol (Ej. Estudiante, Padre, Profesional)</label>
-          </div>
-          <div class="relative z-0 w-full mb-5 group">
-              <textarea name="comment" id="comment" rows="4" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required></textarea>
-              <label for="comment" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Comentario</label>
-          </div>
-          <button type="submit" class="text-white btn-solid-reg w-full focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Enviar reseña</button>
-        </form>
+
+
+<!-- ================================
+     🌟 TESTIMONIOS + FORMULARIO
+================================ -->
+<section id="testimonios" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4 sm:px-8">
+
+    <!-- Título -->
+    <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+      Lo que dicen nuestros usuarios
+    </h2>
+
+    <!-- Carrusel Swiper -->
+    <div class="swiper testimonials-swiper">
+      <div class="swiper-wrapper" id="reviewsContainer">
+        <!-- Las reseñas se insertan dinámicamente desde Firebase -->
       </div>
+
+      <!-- Controles -->
+      <div class="swiper-pagination mt-6"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
+  </div>
 
-
-
-    <div class="relative">
-      <div class="testimonials-swiper swiper-container cursor-grab">
-          <div class="swiper-wrapper">
-            <!-- Testimonio 1 -->
-            <div
-              class="swiper-slide bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all duration-300 max-w-sm mx-auto"
-            >
-              <p class="mb-4 text-gray-700 italic">
-                “Desde que uso Al Día, nunca más se me pasó una renovación de Netflix o Spotify.
-                ¡Todo está bajo control!”
-              </p>
-              <p class="font-semibold text-gray-900">María López</p>
-              <p class="text-gray-500 text-sm">Diseñadora gráfica</p>
-            </div>
-
-            <!-- Testimonio 2 -->
-            <div
-              class="swiper-slide bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all duration-300 max-w-sm mx-auto"
-            >
-              <p class="mb-4 text-gray-700 italic">
-                “Lo mejor es que puedo ver en un solo lugar cuánto gasto al mes en todas mis
-                suscripciones. Súper útil.”
-              </p>
-              <p class="font-semibold text-gray-900">Carlos Méndez</p>
-              <p class="text-gray-500 text-sm">Estudiante universitario</p>
-            </div>
-
-            <!-- Testimonio 3 -->
-            <div
-              class="swiper-slide bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all duration-300 max-w-sm mx-auto"
-            >
-              <p class="mb-4 text-gray-700 italic">
-                “La versión familiar es perfecta, ahora mi pareja y yo sabemos exactamente cuánto
-                pagamos cada uno.”
-              </p>
-              <p class="font-semibold text-gray-900">Ana y Jorge</p>
-              <p class="text-gray-500 text-sm">Familia de Guayaquil</p>
-            </div>
-          </div>
-            <!-- Botones de navegación -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-
-          <!-- Paginación -->
-          <div class="swiper-pagination"></div>
-        </div>
+  <!-- ================================
+       💬 FORMULARIO DE RESEÑAS
+  ================================= -->
+  <div id="review-form" class="mt-20 bg-white shadow-lg rounded-xl max-w-2xl mx-auto p-8">
+    <h3 class="text-2xl font-semibold mb-6 text-center text-gray-800">
+      Escribe tu reseña
+    </h3>
+    <form id="submitReviewForm" class="space-y-6">
+      <!-- Nombre -->
+      <div class="relative z-0 w-full group">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+          placeholder=" "
+          required
+        />
+        <label
+          for="name"
+          class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-6 peer-focus:scale-75"
+        >
+          Nombre
+        </label>
       </div>
-    </div>
+
+      <!-- Rol -->
+      <div class="relative z-0 w-full group">
+        <input
+          type="text"
+          name="role"
+          id="role"
+          class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+          placeholder=" "
+          required
+        />
+        <label
+          for="role"
+          class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-6 peer-focus:scale-75"
+        >
+          Rol (Ej. Estudiante, Padre, Profesional)
+        </label>
+      </div>
+
+      <!-- Comentario -->
+      <div class="relative z-0 w-full group">
+        <textarea
+          name="comment"
+          id="comment"
+          rows="4"
+          class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+          placeholder=" "
+          required
+        ></textarea>
+        <label
+          for="comment"
+          class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-6 peer-focus:scale-75"
+        >
+          Comentario
+        </label>
+      </div>
+
+      <!-- Botón -->
+      <button
+        type="submit"
+        class="w-full rounded-lg bg-blue-600 px-5 py-3 text-sm font-medium text-white transition duration-300 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+      >
+        Enviar reseña
+      </button>
+
+      <p id="reviewMessage" class="text-center text-sm text-gray-600 hidden">✨ Enviando reseña...</p>
+    </form>
+  </div>
+</section>
 
 
     <!-- conclusion -->
@@ -368,6 +399,8 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/scripts.js" defer></script>
-    <script src="js/reviews.js" defer></script>
+    <script type="module" src="/js/reviews.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   </body>
 </html>
